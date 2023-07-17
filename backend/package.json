@@ -5,8 +5,8 @@
   "main": "dist/server.ts",
   "scripts": {
     "build": "tsc",
-    "start-server": "dist/server.js",
-    "start": "nodemon src/server.ts",
+    "start": "dist/server.js",
+    "dev": "nodemon src/server.ts",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
