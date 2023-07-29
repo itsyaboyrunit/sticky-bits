@@ -7,8 +7,8 @@
     "node": "14.x"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "dist/server.js",
+    "build": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
     "dev": "nodemon src/server.ts",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,7 +24,7 @@
     "envalid": "^7.3.1",
     "express": "^4.18.2",
     "netlify-cli": "^12.7.2",
-    "netlify-lamda": "^2.0.15",
+    "netlify-lambda": "^2.0.15",
     "serverless-http": "^2.7.0",
     "express-session": "^1.17.3",
     "http-errors": "^2.0.0",
