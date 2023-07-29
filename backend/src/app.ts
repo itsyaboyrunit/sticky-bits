@@ -8,6 +8,8 @@ import session from "express-session";
 import env from "./util/validateEnv";
 import MongoStore from "connect-mongo";
 import { requiresAuth } from "./middleware/auth";
+import router from "./routes/notes";
+import { Express } from "express-serve-static-core";
 
 const app = express();
 
@@ -50,3 +52,5 @@ app.use((error: unknown, req: Request, res: Response, next: NextFunction) => {
 });
 
 export default app;
+
+
