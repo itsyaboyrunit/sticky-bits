@@ -2,14 +2,14 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.ts",
+  "main": "dist/server.js",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
     "build": "tsc",
-    "start": "server.ts",
-    "dev": "nodemon src/server.ts",
+    "start": "nodemon src/index.js",
+    "dev": "nodemon src/index.js",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "vercel-build": "echo hello"
